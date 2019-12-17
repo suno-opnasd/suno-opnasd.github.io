@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suno-opnasd github pages - misc</title><link href="https://suno-opnasd.github.io/" rel="alternate"></link><link href="https://suno-opnasd.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://suno-opnasd.github.io/</id><updated>2019-12-17T10:38:00+09:00</updated><entry><title>firstpost</title><link href="https://suno-opnasd.github.io/first.html" rel="alternate"></link><published>2019-12-17T10:38:00+09:00</published><updated>2019-12-17T10:38:00+09:00</updated><author><name>suno-opnasd</name></author><id>tag:suno-opnasd.github.io,2019-12-17:/first.html</id><summary type="html">&lt;p&gt;first post&lt;/p&gt;</summary><content type="html">&lt;h1&gt;suno-opnasd first page&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Note with SyntaxHighlight&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;python
-  print "Hello suno-opnasd!!"
-  print "olleH pseudo-ouns!!"&lt;/code&gt;&lt;/p&gt;</content><category term="misc"></category><category term="github"></category><category term="pelican"></category><category term="blog"></category></entry></feed>

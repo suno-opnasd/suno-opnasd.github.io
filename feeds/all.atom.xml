@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>suno-opnasd github pages</title><link href="https://suno-opnasd.github.io/" rel="alternate"></link><link href="https://suno-opnasd.github.io/feeds/all.atom.xml" rel="self"></link><id>https://suno-opnasd.github.io/</id><updated>2019-12-17T10:38:00+09:00</updated><entry><title>firstpost</title><link href="https://suno-opnasd.github.io/first.html" rel="alternate"></link><published>2019-12-17T10:38:00+09:00</published><updated>2019-12-17T10:38:00+09:00</updated><author><name>suno-opnasd</name></author><id>tag:suno-opnasd.github.io,2019-12-17:/first.html</id><summary type="html">&lt;p&gt;first post&lt;/p&gt;</summary><content type="html">&lt;h1&gt;suno-opnasd first page&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>suno-opnasd github pages</title><link href="https://suno-opnasd.github.io/" rel="alternate"></link><link href="https://suno-opnasd.github.io/feeds/all.atom.xml" rel="self"></link><id>https://suno-opnasd.github.io/</id><updated>2019-12-17T10:38:00+09:00</updated><entry><title>firstpost</title><link href="https://suno-opnasd.github.io/firstpost.html" rel="alternate"></link><published>2019-12-17T10:38:00+09:00</published><updated>2019-12-17T10:38:00+09:00</updated><author><name>suno-opnasd</name></author><id>tag:suno-opnasd.github.io,2019-12-17:/firstpost.html</id><summary type="html">&lt;p&gt;first post&lt;/p&gt;</summary><content type="html">&lt;h1&gt;suno-opnasd first page&lt;/h1&gt;
+&lt;h1&gt;見出し1&lt;/h1&gt;
+&lt;h2&gt;見出し２&lt;/h2&gt;
+&lt;p&gt;見出し２に対しての本文&lt;/p&gt;
+&lt;h3&gt;見出し３&lt;/h3&gt;
+&lt;p&gt;見出し３に対しての本文&lt;/p&gt;
+&lt;h3&gt;リストとコードブロック&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;項目リスト1&lt;/li&gt;
+&lt;li&gt;項目リスト2&lt;/li&gt;
+&lt;li&gt;項目リスト3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;何か挟まないと項目リストが解除されない&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;番号リスト1&lt;/li&gt;
+&lt;li&gt;番号リスト2&lt;/li&gt;
+&lt;li&gt;番号リスト3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;何か挟まないと番号リストが解除されない&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note with SyntaxHighlight&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;python
-  print "Hello suno-opnasd!!"
-  print "olleH pseudo-ouns!!"&lt;/code&gt;&lt;/p&gt;</content><category term="misc"></category><category term="github"></category><category term="pelican"></category><category term="blog"></category></entry></feed>
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello suno-opnasd!!&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;print&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;olleH pseudo-ouns!!&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="post"></category><category term="github"></category><category term="pelican"></category><category term="blog"></category></entry></feed>
