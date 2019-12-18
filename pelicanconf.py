@@ -71,7 +71,7 @@ RELATIVE_URLS = True
 
 COPYRIGHT_NAME = AUTHOR
 COPYRIGHT_YEAR = datetime.now().year
-GITHUB_CORNER_URL = 'https://github.com/suno-opnasd/suno-opnasd.gihub.io'
+#GITHUB_CORNER_URL = 'https://github.com/suno-opnasd/suno-opnasd.github.io'
 STATIC_PATHS = ['images', 'extra']
 CUSTOM_CSS = 'static/custom.css'
 #GOOGLE_ADSENSE = {
