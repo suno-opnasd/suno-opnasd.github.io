@@ -4,8 +4,6 @@ Tags: github, pelican, blog
 Author: suno-opnasd
 Summary: first post
 
-# suno-opnasd first page
-
 # 見出し1
 
 ## 見出し２
