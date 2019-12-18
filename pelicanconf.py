@@ -73,6 +73,10 @@ COPYRIGHT_NAME = AUTHOR
 COPYRIGHT_YEAR = datetime.now().year
 #GITHUB_CORNER_URL = 'https://github.com/suno-opnasd/suno-opnasd.github.io'
 STATIC_PATHS = ['images', 'extra']
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt' : {'path' : 'robots.txt'},
+    'extra/favicon.ico' : {'path' : 'favicon.ico'},
+}
 CUSTOM_CSS = 'static/custom.css'
 #GOOGLE_ADSENSE = {
 #

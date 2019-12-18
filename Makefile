@@ -10,6 +10,14 @@ PUBLISHCONF=$(BASEDIR)/publishconf.py
 
 GITHUB_PAGES_BRANCH=master
 
+# make new post 
+# see also https://github.com/getpelican/pelican/wiki/Tips-n-Tricks
+EDITOR=/usr/bin/vim
+PAGESDIR=$(INPUTDIR)/post
+DATE := $(shell date +'%Y-%m-%d %H:%M')
+DATE2 := $(shell date +'%Y-%m-%d')
+SLUG := $(shell echo '${DATE2}_${NAME}' | sed -e 's/[^[:alnum:]_]/-/g' | tr -s '-' | tr A-Z a-z)
+EXT ?= md
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -37,6 +45,8 @@ help:
 	@echo '   make ssh_upload                     upload the web site via SSH        '
 	@echo '   make rsync_upload                   upload the web site via rsync+ssh  '
 	@echo '   make github                         upload the web site via gh-pages   '
+	@echo '   make newpost NAME='Post name'       make new post with name            '
+	@echo '   make np      NAME='Post name'       make new post with name            '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
@@ -84,4 +94,19 @@ github: publish
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
-.PHONY: html help clean regenerate serve serve-global devserver publish github dev s
+np: newpost
+
+newpost:
+ifdef NAME
+	echo "Title: $(NAME)" >  $(PAGESDIR)/$(SLUG).$(EXT)
+	#echo "Slug: $(SLUG)" >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "Date: $(DATE)" >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo ""              >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo ""              >> $(PAGESDIR)/$(SLUG).$(EXT)
+	echo "generated: ${PAGESDIR}/${SLUG}.${EXT}"
+else
+	@echo 'Variable NAME is not defined.'
+	@echo 'Do make newpost NAME='"'"'Post Name'"'"
+endif
+
+.PHONY: html help clean regenerate serve serve-global devserver publish github dev s newpost np
